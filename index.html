@@ -1,152 +1,17 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="de">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale:1.0">
 
-    <link href="css/metro.min.css" rel="stylesheet"/>
-    <link href="css/metro-responsive.min.css" rel="stylesheet"/>
-    <link href="css/metro-icons.min.css" rel="stylesheet"/>
-    <link href="css/metro-schemes.min.css" rel="stylesheet"/>
-    <link href="css/layout.css" rel="stylesheet"/>
-    <link href="img/favicon.ico" rel="icon" type="image/vnd.microsoft.icon"/>
+    <link href="less/main.less" rel="stylesheet/less">
+    <!--<link href="style.css" rel="stylesheet">-->
 
-
-    <title>Home - Laggson.de</title>
-
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/less.min.js"></script>
+    <title>Willkommen :)</title>
 </head>
-<body class="metro">
-<nav class="app-bar darcula" data-role="appbar">
-    <div class="container">
-        <a href="index.html" class="app-bar-element">
-            <img src="img/icon-35.png" rel="Logo" id="titleIcon"/>
-            Laggson.de</a>
-        <span class="app-bar-divider"></span>
-        <!--<a class="element1 pull-menu" href="#" data-vivaldi-spatnav-clickable="1"></a>-->
-        <ul class="app-bar-menu">
-            <li><a href="#">Eintrag 1</a></li>
+<body>
 
-            <li>
-                <a class="dropdown-toggle" href="#">Projekte</a>
-                <ul class="d-menu" data-role="dropdown">
-                    <li><a>TimeCalc</a></li>
-                    <li><a>Eintrag 2</a></li>
-                    <li><a>Eintrag 3</a></li>
-                </ul>
-            </li>
-            <li><a href="#">Eintrag 3</a></li>
-            <!--<li><a href="#">Eintrag 4</a></li>-->
-        </ul>
-
-        <div class="app-bar-element place-right">
-            <a class="dropdown-toggle fg-white"><span class="mif-enter"></span> Admin-Login</a>
-            <div class="app-bar-drop-container bg-white fg-dark place-right"
-                 data-role="dropdown" data-no-close="true">
-                <div class="padding20">
-                    <form onsubmit="return auth()">
-                        <!--<h4 class="text-light">Admin-Login</h4>-->
-                        <!--<div class="input-control modern text iconic">-->
-                            <!--<input type="text" id="username">-->
-                            <!--<span class="label">Anmeldung</span>-->
-                            <!--<span class="informer">Gib deinen Nutzernamen ein</span>-->
-                            <!--<span class="placeholder">Nutzername</span>-->
-                            <!--<span class="icon mif-user"></span>-->
-                        <!--</div>-->
-                        <div class="input-control modern password iconic" data-role="input">
-                            <input type="password" id="password" >
-                            <span class="label">Passwort</span>
-                            <span class="informer">Gib das Admin-Passwort ein</span>
-                            <span class="placeholder">Passwort</span>
-                            <span class="icon mif-lock"></span>
-                            <button class="button helper-button reveal"><span class="mif-looks"></span></button>
-                        </div>
-                        <label class="input-control checkbox small-check">
-                            <input type="checkbox" id="remember_me">
-                            <span class="check"></span>
-                            <span class="caption">Eingeloggt bleiben</span>
-                        </label>
-                        <div class="form-actions">
-                            <button class="button">Login</button>
-                            <button class="button link">Abbrechen</button>
-                        </div>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </div>
-</nav>
-
-<header class="align-center">
-    <h1 class="text-shadow title text-light">Willkommen!</h1>
-
-    <div class="sub-leader text-light">
-        Hier entsteht nach und nach meine kleine Internet-Präsenz.
-    </div>
-</header>
-
-<main class="container align-justify">
-    <div class="container">
-        <h2>Lorem ipsum dolor...</h2>
-
-        <p>...sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum
-            sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis,
-            ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo,
-            fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae,
-            justo.</p>
-
-        <p>Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi.
-            Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim.
-            Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius
-            laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies
-            nisi. Nam eget dui.</p>
-
-        <p>Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing
-            sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et
-            ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet
-            orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis
-            magna.</p>
-
-        <p>Sed consequat, leo eget bibendum sodales, augue velit cursus nunc, quis gravida magna mi a libero. Fusce
-            vulputate eleifend sapien. Vestibulum purus quam, scelerisque ut, mollis sed, nonummy id, metus. Nullam
-            accumsan lorem in dui. Cras ultricies mi eu turpis hendrerit fringilla. Vestibulum ante ipsum primis in
-            faucibus orci luctus et ultrices posuere cubilia Curae; In ac dui quis mi consectetuer lacinia. Nam pretium
-            turpis et arcu.</p>
-
-        <p>Duis arcu tortor, suscipit eget, imperdiet nec, imperdiet iaculis, ipsum. Sed aliquam ultrices mauris.
-            Integer ante arcu, accumsan a, consectetuer eget, posuere ut, mauris. Praesent adipiscing. Phasellus
-            ullamcorper ipsum rutrum nunc. Nunc nonummy metus. Vestibulum volutpat pretium libero. Cras id dui. Aenean
-            ut eros et nisl sagittis vestibulum. Nullam nulla eros, ultricies sit amet, nonummy id, imperdiet feugiat,
-            pede. Sed lectus.</p>
-
-        <p>Donec mollis hendrerit risus. Phasellus nec sem in justo pellentesque facilisis. Etiam imperdiet imperdiet
-            orci. Nunc nec neque. Phasellus leo dolor, tempus non, auctor et, hendrerit quis, nisi. Curabitur ligula
-            sapien, tincidunt non, euismod vitae, posuere imperdiet, leo. Maecenas malesuada. Praesent congue erat at
-            massa. Sed cursus turpis vitae tortor. Donec posuere vulputate arcu. Phasellus accumsan cursus velit.</p>
-
-        <p>Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Sed aliquam, nisi
-            quis porttitor congue, elit erat euismod orci, ac placerat dolor lectus quis orci. Phasellus consectetuer
-            vestibulum elit. Aenean tellus metus, bibendum sed, posuere ac, mattis non, nunc. Vestibulum fringilla pede
-            sit amet augue. In turpis. Pellentesque posuere. Praesent turpis. Aenean posuere, tortor sed cursus feugiat,
-            nunc augue blandit nunc, eu sollicitudin urna dolor sagittis lacus. Donec elit libero, sodales nec, volutpat
-            a, suscipit non, turpis. Nullam sagittis. Suspendisse pulvinar, augue ac venenatis condimentum, sem libero
-            volutpat nibh, nec pellentesque velit pede quis nunc. Vestibulum ante ipsum primis in faucibus orci luctus
-            et ultrices posuere cubilia Curae; Fusce id purus. Ut varius tincidunt libero. Phasellus dolor. Maecenas
-            vestibulum mollis</p>
-    </div>
-
-</main>
-
-<footer class="bg-darkGray">
-    <div class="container">
-        <span class="place-left">Powered by <a href="https://metroui.org.ua" target="_blank">MetroUI CSS</a>
-             - © 2017 All rights reserved</span>
-        <span class="place-right">SiteMap | Impressum</span>
-    </div>
-</footer>
 </body>
-<script src="js/jquery.js" type="text/javascript"></script>
-<script src="js/metro.min.js" type="text/javascript"></script>
-<!--<script src="js/widgets/dropdown.js" type="text/javascript"></script>-->
-
-<script src="js/main.js" type="text/javascript"></script>
 </html>
